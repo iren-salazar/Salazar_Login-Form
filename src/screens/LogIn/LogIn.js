@@ -12,7 +12,6 @@ import Logo from "../../../assets/images/logo.png";
 import { useNavigation } from "@react-navigation/native";
 import { useForm } from "react-hook-form";
 
-
 const LogIn = () => {
   const {
     control,
@@ -43,7 +42,7 @@ const LogIn = () => {
         source={Logo}
         resizeMode="contain"
       />
-      <Text style={styles.title}>Cheers to convinience.</Text>
+      <Text style={styles.title}>Cheers to convinience</Text>
 
       <Input
         name="username"
@@ -97,7 +96,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 25,
     fontWeight: "300",
-    color: "gray",
+    color: "grey",
   },
 
   logo: {
