@@ -19,6 +19,8 @@ const Home = () => {
     navigation.navigate("Login");
   };
 
+  
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}></Text>

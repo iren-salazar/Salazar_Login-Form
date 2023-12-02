@@ -2,12 +2,17 @@ import { StyleSheet, Text, View } from "react-native";
 import LogIn from "./src/screens/LogIn/LogIn";
 import Register from "./src/screens/Resgister/Register";
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import LandingPage from './path/to/LandingPage'; // Replace with the correct path
+
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Forgotpassword from "./src/screens/Forgotpassword/Forgotpassword";
 import ResetConfirmation from "./src/screens/Forgotpassword/ResetConfirmation";
 import Confirmation from "./src/screens/Forgotpassword/Confirmation";
 import Home from "./src/screens/Homescreen/Home";
+import Landing from "./src/screens/Landingpage/Landing";
 
 const Stack = createStackNavigator();
 
@@ -15,6 +20,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Landing" component={Landing} />
         <Stack.Screen name="Login" component={LogIn} />
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Forgot Password" component={Forgotpassword} />
