@@ -90,13 +90,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     padding: 20,
-    backgroundColor: "#daa520",
+    backgroundColor: "#daa520", //login page background color
     borderRadius: 5,
   },
   title: {
     fontSize: 25,
     fontWeight: "300",
-    color: "grey",
+    color: "white",
   },
 
   logo: {

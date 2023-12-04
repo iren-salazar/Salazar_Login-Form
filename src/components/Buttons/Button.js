@@ -1,4 +1,9 @@
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { 
+  View, 
+  Text, 
+  Pressable, 
+  StyleSheet 
+} from "react-native";
 import React from "react";
 
 const Button = ({ type, onPress, text }) => {
@@ -19,7 +24,7 @@ const styles = StyleSheet.create({
   },
 
   container_PRIMARY: {
-    backgroundColor: "#8b0000",
+    backgroundColor: "black", // Log In, Register, Password recovery etc background color
     borderRadius: 5,
     marginVertical: 10,
     padding: 10,

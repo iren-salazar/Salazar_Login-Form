@@ -1,5 +1,11 @@
 import React from "react";
-import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
+import { 
+  View, 
+  Text, 
+  StyleSheet, 
+  TouchableOpacity, 
+  ImageBackground 
+} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const LandingPage = () => {
@@ -24,12 +30,12 @@ const LandingPage = () => {
 
         {/* LogIn Button */}
         <TouchableOpacity style={styles.button} onPress={onPressLogin}>
-          <Text style={styles.buttonText}>Login</Text>
+          <Text style={styles.buttonText}>Log In</Text>
         </TouchableOpacity>
 
         {/* Signup Button */}
         <TouchableOpacity style={styles.button} onPress={onPressSignup}>
-          <Text style={styles.buttonText}>Sign up</Text>
+          <Text style={styles.buttonText}>Sign Up</Text>
         </TouchableOpacity>
 
         <View style={styles.emptySpace} /> {/* Adds empty space */}
@@ -56,7 +62,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   button: {
-    backgroundColor: "#D4A55D", // Your button color
+    backgroundColor: "black", // Your button color
     paddingHorizontal: 40,
     paddingVertical: 15,
     borderRadius: 8,
@@ -65,7 +71,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: "bold",
-    color: "#4A2F18", // Your button text color
+    color: "white", // Your button TEXT color
   },
 });
 

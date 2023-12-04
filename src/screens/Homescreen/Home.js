@@ -29,7 +29,7 @@ const Home = () => {
         source={Logo}
         resizeMode="contain"
       />
-      <Button text="Sign Out" type="TERTIARY" onPress={onPressSignOut} />
+      <Button text="Log Out" type="TERTIARY" onPress={onPressSignOut} />
     </View>
   );
 };
