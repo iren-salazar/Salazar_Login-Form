@@ -1,3 +1,4 @@
+import React from "react";
 import {
   View,
   Text,
@@ -5,10 +6,9 @@ import {
   Image,
   useWindowDimensions,
 } from "react-native";
-import React, { useState } from "react";
 import Input from "../../components/Inputs/Input";
-import Button from "../../components/Buttons/Button";
 import Logo from "../../../assets/images/logo.png";
+import Button from "../../components/Buttons/Button";
 import { useNavigation } from "@react-navigation/native";
 import { useForm } from "react-hook-form";
 

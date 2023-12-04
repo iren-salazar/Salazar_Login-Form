@@ -2,32 +2,37 @@ import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const Landing = () => {
+const LandingPage = () => {
   const navigation = useNavigation();
 
   const onPressLogin = () => {
-    navigation.navigate("LogIn");
+    navigation.navigate("Login"); // Assuming "LogIn" is the correct route name
   };
 
   const onPressSignup = () => {
     navigation.navigate("Register");
   };
 
+
   return (
     <ImageBackground
-      source={require("../../../assets/images/background.jpg")} // Replace with your image source
+      source={require("../../../assets/images/landing_newBckgrnd.jpg")} // Replace with your image source
       style={styles.backgroundImage}
     >
       <View style={styles.container}>
-        <Text style={styles.title}>Welcome to Your App</Text>
+        <Text style={styles.title}>Welcome to National Beverage Corp.</Text>
 
+        {/* LogIn Button */}
         <TouchableOpacity style={styles.button} onPress={onPressLogin}>
           <Text style={styles.buttonText}>Login</Text>
         </TouchableOpacity>
 
+        {/* Signup Button */}
         <TouchableOpacity style={styles.button} onPress={onPressSignup}>
-          <Text style={styles.buttonText}>Signup</Text>
+          <Text style={styles.buttonText}>Sign up</Text>
         </TouchableOpacity>
+
+        <View style={styles.emptySpace} /> {/* Adds empty space */}
       </View>
     </ImageBackground>
   );
@@ -64,4 +69,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Landing;
+export default LandingPage;

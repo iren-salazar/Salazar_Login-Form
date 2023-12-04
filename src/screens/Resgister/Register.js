@@ -1,3 +1,4 @@
+import React from "react";
 import {
   View,
   Text,
@@ -5,7 +6,6 @@ import {
   useWindowDimensions,
   Image,
 } from "react-native";
-import React, { useState } from "react";
 import Input from "../../components/Inputs/Input";
 import Button from "../../components/Buttons/Button";
 import Logo from "../../../assets/images/logo.png";
